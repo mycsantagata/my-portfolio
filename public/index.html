@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:title" content="Portfolio: Carmine Santagata">
+  <meta property="og:description" content="Benvenuto nel mio Portfolio! Contattami per opportunità di collaborazione!">
+  <meta property="og:type" content="website">
+  
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container fluid">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#bio">Bio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Progetti</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contattami</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="successNotification" class="container fade-in">
+  <div class="col-lg-8 col-10 alert alert-success" role="alert">
+    Email inviata con successo!
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi"></button>
+  </div>
+</div>
+
+<div id="failedNotification" class="container fade-in">
+  <div class="col-lg-8 col-10 alert alert-danger" role="alert">
+    Qualcosa è andato storto! Si prega di mandare un nuovo messaggio.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi"></button>
+  </div>
+</div>
+
+  <!-- Bio Section -->
+  <section id="bio" class="section ">
+    <div class="container fade-in text-center">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <h1  style="margin-bottom: 5%;" class="display-2 test">Carmine Santagata</h1>
+          <p class="lead" style="margin-bottom: 10%;">Sono un Software Engineer appassionato di codice e innovazione. 
+            Mi occupo di creare soluzioni web efficienti attraverso diverse tecnologie.</p>
+            <div class="d-grid gap-2">
+            <button type="button" class="btn btn-outline-light" data-mdb-ripple-init data-mdb-ripple-color="dark" id="btnCV">Visita il mio CV</button>
+          </div>
+    </div>
+  </section>
+
+    <!-- Sezione Progetti con Cards -->
+    <section id="projects"class="section">
+      <div class="container text-center fade-in">
+      <h2 class="mb-5">I Miei Progetti</h2>
+
+      <div class="row"style="margin-bottom: 5%;">
+       
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/CrowdfundingSolidity.PNG" class="card-img-top img-fluid" alt="CrowdfundingSolidity">
+            <div class="card-body">
+              <h4 class="card-title">Crowdfunding</h4>
+              <p class="card-text">Smart contract basato su Ethereum che consente la possibilità di gestire una raccolta fondi.</p>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/VegetarianRecipeReact.PNG" class="card-img-top img-fluid" alt="VegetarianRecipeReact">
+            <div class="card-body">
+              <h4 class="card-title">Vegetarian Recipe</h4>
+              <p class="card-text">Il progetto si basa su un sito web di ricette vegetariane in cui è possibile cercare le ricette desiderate e
+                 saperne di più sulle informazioni nutrizionali e sui metodi di preparazione.</p>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/TripManagerSolidity.PNG" class="card-img-top  img-fluid" alt="TripManagerSolidity">
+            <div class="card-body">
+              <h4 class="card-title">Trip Manager</h4>
+              <p class="card-text">Smart contract basato su Ethereum che consente la gestione dei viaggi. Gli utenti possono creare, prenotare o cancellare nuovi viaggi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-grid gap-2">
+        <a href="https://github.com/mycsantagata" target="_blank" class="btn btn-outline-dark btn-rounded" data-mdb-ripple-init data-mdb-ripple-color="dark">
+          Visita il mio repository GitHub
+        </a>
+      </div>
+  </div>
+    </section>
+
+  
+
+
+  <!-- Contattami -->
+  <section id="contact" class="section">
+    <div class="container fade-in">
+        <h2  class="mb-5">Contattami</h2>
+        <form id="contactForm">
+        <div class="contact-form">
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="message">Messaggio:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+  
+          <div class="form-group">
+            <button type="submit" class="btn btn-outline-dark" data-mdb-ripple-init data-mdb-ripple-color="dark">Invia un messaggio</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-light text-center py-3">
+    <a style="margin-right: 12px;"href="https://www.linkedin.com/in/carmine-santagata-510b08204" class="text-light">
+      <span class="ml-1">LinkedIn</span>
+      <i class="fab fa-linkedin fa-lg"></i>
+    </a>
+    <a href="https://github.com/mycsantagata" target="_blank" class="text-light">
+      <span class="ml-1">GitHub</span>
+      <i class="fab fa-github fa-lg"></i>
+    </a>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+
+      $("#contactForm").submit(function(event) {
+      event.preventDefault();     
+
+      const service_id = "service_ztcx976";
+      const template_id = "template_pigg82u";
+      var formData = $(this).serializeArray();
+      var data = {};
+
+      $.each(formData, function(index, field) {
+        data[field.name] = field.value;
+      });
+
+      emailjs.init({
+        publicKey: "st9VtjeFY4puUkb4H",
+      });
+
+      emailjs.send(service_id, template_id, data).then(
+      (response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        showNotification("successNotification");
+      },
+      (error) => {
+        console.log('FAILED...', error);
+        showNotification("failedNotification");
+      },
+    );
+
+    function showNotification(handleNotif) {
+      $("#"+handleNotif).addClass("visible");
+
+      setTimeout(function() {
+      $("#"+handleNotif).removeClass("visible");
+      }, 5000);
+    }
+
+  });
+
+
+      $("#btnCV").click(function() {
+                window.location.href = './curriculum.html';
+            });
+
+ if (window.matchMedia("(max-width: 767px)").matches) {
+  $.scrollify.disable();
+  $('#projects .fade-in').addClass('visible');
+  $('#contact .fade-in').addClass('visible');
+} else{
+        $.scrollify({
+        section: ".section",
+        easing: "easeOutExpo", 
+        scrollSpeed: 800,
+        setHeights: false,      
+        before: function (index, sections) {
+          sections.forEach((currentSection, i) => {
+          currentSection.find('.fade-in').toggleClass('visible', index === i);
+         });
+        },
+      });
+    }
+
+      $('#bio .fade-in').addClass('visible');
+    });
+  </script>
+
+</body>
+</html>
